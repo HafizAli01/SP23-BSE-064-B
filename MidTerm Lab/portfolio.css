@@ -1,0 +1,100 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Header Section */
+header {
+  background-color: #333;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header .tagline {
+  font-size: 1.5rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* About Section */
+.section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+#about p {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Projects Section */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Adjusted image size for Project 1 and Project 2 */
+.project-card img {
+  width: 50%; /* Set width to 50% of the parent */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure there's no extra space below the image */
+  margin: 0 auto; /* Center the image */
+}

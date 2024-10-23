@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Advanced Portfolio</title>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header id="home">
+    <div class="container">
+      <h1 class="name">Hafiz Ali's Portfolio</h1>
+      <p class="tagline">Creative Developer | Designer | Innovator</p>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a passionate developer with expertise in front-end and back-end technologies. I love crafting visually stunning and functional websites with a focus on user experience.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="pic11.png" alt="Project 1">
+          <div class="project-info">
+            <h3>Web Development</h3>
+            <p>This project involves creating a modern portfolio website with dynamic content loading and responsive design.</p>
+            <button class="show-description" onclick="loadDescription('project1.txt')">View Details</button>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="pic222.png" alt="Project 2">
+          <div class="project-info">
+            <h3>E-Commerce</h3>
+            <p>An e-commerce platform built with modern web technologies, focusing on user-friendly design and smooth functionality.</p>
+            <button class="show-description" onclick="loadDescription('project2.txt')">View Details</button>
+          </div>
+        </div>
+
+        <!-- New Project Card -->
+        <div class="project-card">
+          <img src="pic3.png" alt="Project 3"> <!-- Replace with your image source -->
+          <div class="project-info">
+            <h3>Website Redesign</h3>
+            <p>This project showcases a mobile application designed for seamless user interaction and engaging user experience.</p>
+            <button class="show-description" onclick="loadDescription('project3.txt')">View Details</button>
+          </div>
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you'd like to collaborate or just say hello, feel free to drop me a message!</p>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Hafiz Ali | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
