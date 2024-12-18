@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | Interwood</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Logo Section -->
+    <div class="logo-container text-center my-4">
+        <img src="Images/interwood-logo.avif" alt="Interwood Logo">
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto d-flex justify-content-between">
+                    <li class="nav-item"><a class="nav-link" href="#">Wedding Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Bedroom</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Living</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Study</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Kids</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Dining</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Decor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Office</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Kitchen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Doors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Wardrobes</a></li>
+                </ul>
+                <div class="d-flex">
+                    <a href="Search.html" class="me-3" title="Search">
+                        <i class="bi bi-search icon"></i>
+                    </a>
+                    <a href="login.ejs" class="me-3" title="User">
+                        <i class="bi bi-person icon"></i>
+                    </a>
+                    <a href="views/cart.ejs" title="Add to Cart">
+                        <i class="bi bi-cart icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Create Account Form Section -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-body p-5">
+                        <h2 class="text-center mb-4 fw-bold">Create an Account</h2>
+                        <p class="text-center text-muted mb-4">
+                            Please fill out the form below to create your account. If you already have an account, please log in instead.
+                        </p>
+                        <form>
+                            <div class="mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                            </div>
+                            <button type="submit" class="btn btn-dark w-100 mt-3">CREATE ACCOUNT</button>
+                        </form>
+                        <hr>
+                        <p class="text-center">
+                            <strong>Already have an account?</strong> <a href="login.html" class="text-decoration-none">Sign in</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="discount-banner">
+        <div class="discount-content">
+            <p>ADDITIONAL 2.5% DISCOUNT ON ALL ONLINE ORDERS</p>
+            <a href="#" class="shop-now-btn">SHOP NOW</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+<footer class="bg-light py-5 border-top">
+    <div class="container">
+        <div class="row">
+            <!-- Information Section -->
+            <div class="col-md-3 mb-4">
+                <h6 class="text-uppercase fw-bold mb-3">Information</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-muted">About Us</a></li>
+                    <li><a href="#" class="text-muted">Store Locator</a></li>
+                    <li><a href="#" class="text-muted">Blog</a></li>
+                    <li><a href="#" class="text-muted">Payments</a></li>
+                    <li><a href="#" class="text-muted">Shipping</a></li>
+                    <li><a href="#" class="text-muted">Authorized Dealers</a></li>
+                    <li><a href="#" class="text-muted">Careers</a></li>
+                    <li><a href="#" class="text-muted">Terms of Offers for Sale</a></li>
+                    <li><a href="#" class="text-muted">Terms of Use</a></li>
+                    <li><a href="#" class="text-muted">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- User Area Section -->
+            <div class="col-md-3 mb-4">
+                <h6 class="text-uppercase fw-bold mb-3">User Area</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-muted">Corporate</a></li>
+                    <li><a href="#" class="text-muted">Corporate Form</a></li>
+                    <li><a href="#" class="text-muted">Contact Us</a></li>
+                    <li><a href="#" class="text-muted">Information/Lead Form</a></li>
+                    <li><a href="#" class="text-muted">Rewards</a></li>
+                    <li><a href="#" class="text-muted">Loyalty Form</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info Section -->
+            <div class="col-md-3 mb-4">
+                <h6 class="text-uppercase fw-bold mb-3">Contact Info</h6>
+                <p class="text-muted">021-111-203-203</p>
+                <p><a href="mailto:complaints@interwoodmobel.com" class="text-muted">complaints@interwoodmobel.com</a></p>
+                <h6 class="text-uppercase fw-bold mt-4">Certified by</h6>
+                <div>
+                    <img src="Images/Certification1.webp" alt="Certification 1" class="me-2" style="height: 40px;">
+                    <img src="Images/Certification2.webp" alt="Certification 2" style="height: 40px;">
+                </div>
+            </div>
+
+            <!-- Follow Us & Mailing List -->
+            <div class="col-md-3">
+                <h6 class="text-uppercase fw-bold mb-3">Follow Us</h6>
+                <div class="d-flex mb-3">
+                    <a href="#" class="text-muted me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-muted me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-muted me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-muted me-2"><i class="bi bi-youtube"></i></a>
+                    <a href="#" class="text-muted me-2"><i class="bi bi-tiktok"></i></a>
+                    <a href="#" class="text-muted"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <h6 class="text-uppercase fw-bold">Join Our Mailing List</h6>
+                <p class="text-muted">Subscribe to our newsletter to get the latest news and product updates directly to your email.</p>
+                <form>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter your mail address">
+                        <button class="btn btn-dark" type="submit">→</button>
+                    </div>
+                </form>
+                <h6 class="text-uppercase fw-bold mt-4">Installment Plans & Payment Gateway</h6>
+                <div>
+                    <img src="Images/SilkBank.webp" alt="SilkBank" class="me-2" style="height: 40px;">
+                    <img src="Images/FaysalBank.webp" alt="FaysalBank" class="me-2" style="height: 40px;">
+                    <img src="Images/HBL.webp" alt="HBL Pay" style="height: 40px;">
+                </div>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="row">
+            <!-- Useful Furniture Categories -->
+            <div class="col-md-12 mb-4">
+                <h6 class="text-uppercase fw-bold mb-3">Useful Furniture Categories</h6>
+                <p class="text-muted">
+                    Dressing Tables, Bed Sets, Double Bed Set, Queen Size Beds, Bedsides, Bedroom Chairs, CEO Chairs, Wall Mirrors, Sofas, Sofa Set, 1 Seater Sofa, 2 Seater Sofa, 3 Seater Sofa, L Shaped Sofa, Ottomans, Benches, Recliners, Sofa Cum Bed, Kids Wardrobe, Flooring, Stools, Kids Furniture, Bunk Beds, Single Beds, Vases & Bowls, Accent Tables, Lamps And Lighting, Paintings, Study Chairs, Study Tables, Flowers, Office Chair, Bar Stools, Dining Chairs, Occasional Chairs, Rocking Chairs, Outdoor Furniture, Wall Clock, Bookshelves, Tables, Dining Tables, Dining Table Set, Coffee Tables, Nested Tables, Computer Tables, TV Units
+                </p>
+            </div>
+            <!-- Shop Furniture by Room -->
+            <div class="col-md-12 mb-4">
+                <h6 class="text-uppercase fw-bold mb-3">Shop Furniture by Room</h6>
+                <p class="text-muted">
+                    Living Room Furniture, Bedroom Furniture, Dining Furniture, Study Furniture, Office Furniture, Kids Furniture
+                </p>
+            </div>
+            <!-- Office Furniture Categories -->
+            <div class="col-md-12 mb-4">
+                <h6 class="text-uppercase fw-bold mb-3">Office Furniture Categories</h6>
+                <p class="text-muted">
+                    Office Tables, Manager Tables, Executive Tables, Workstations, Reception Counters, Meeting Tables, Office Chairs, CEO Chairs, High Back Chairs, Ergonomic Chairs, Cafe Chairs, Office Sofas, Office Sofa Set, Office Executive Furniture
+                </p>
+            </div>
+            <!-- Wardrobes & Kitchen Designs -->
+            <div class="col-md-12 mb-4">
+                <h6 class="text-uppercase fw-bold mb-3">Wardrobes & Kitchen Designs</h6>
+                <p class="text-muted">
+                    Kitchen Design, Kitchen Cabinets, Small Kitchen Design, Kitchen Accessories, Kitchen Sink, Kitchen Hood, Wardrobe Design, Built-in wardrobes, Sliding Wardrobes
+                </p>
+            </div>
+            <!-- Delivering In -->
+            <div class="col-md-12">
+                <h6 class="text-uppercase fw-bold mb-3">Delivering In</h6>
+                <p class="text-muted">Lahore, Islamabad, Karachi</p>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p class="text-muted mb-0">&copy; 2024 Interwood, Powered by Alchemative DMCC</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

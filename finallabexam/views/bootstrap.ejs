@@ -1,0 +1,611 @@
+
+    <%- contentFor("styles-area") %>
+    <link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Logo Section -->
+    <div class="logo-container">
+        <img src="Images/interwood-logo.avif" alt="Interwood Logo">
+    </div>
+
+
+
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto d-flex justify-content-between">
+                    <li class="nav-item"><a class="nav-link" href="#">Wedding Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Bedroom</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Living</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Study</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Kids</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Dining</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Decor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Office</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Kitchen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Doors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Admin/products">Admin Panel</a></li>
+                </ul>
+                <div class="d-flex">
+                    <!-- Search Icon -->
+                <a href="#" class="me-3" title="Search" onclick="toggleSearchBar(event)">
+                    <i class="bi bi-search icon"></i>
+                </a>
+                <!-- User Icon -->
+                <a href="/login.ejs" class="me-3" title="User">
+                    <i class="bi bi-person icon"></i>
+                </a>
+                <!-- Cart Icon -->
+                <a href="/cart.ejs" title="Add to Cart">
+                    <i class="bi bi-cart icon"></i>
+                </a>                    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="search-bar" id="search-section" style="display: none;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex align-items-center">
+                        <!-- Search Icon -->
+                        <i class="bi bi-search me-2 fs-4 text-muted"></i>
+                        <!-- Input Field -->
+                        <input type="text" class="form-control border-0 shadow-none" 
+                            placeholder="Search for anything" style="font-size: 1.5rem; color: #adb5bd;">
+                        <!-- Close Icon -->
+                        <i class="bi bi-x-lg ms-auto fs-4 text-muted" style="cursor: pointer;" onclick="closeSearchBar()"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Banner -->
+    <div class="main-banner">
+        <img src="Images/Main Banner.webp" alt="Winter Sale">
+    </div>
+
+   <!-- Discount Banner -->
+<div class="discount-banner">
+    <span>Nationwide Delivery</span>
+    <span>Nationwide Delivery</span>
+    <span>Nationwide Delivery</span>
+    <span>Nationwide Delivery</span>
+    <span>Nationwide Delivery</span>
+    <span>Nationwide Delivery</span>
+</div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+    <!-- Sofa Sets Section with Carousel -->
+    <div class="section container my-5">
+        <h2 class="text-center mb-4">Sofa Sets Offers</h2>
+        <div id="sofaCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row g-4">
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Sofa1.webp" alt="Sofa Set 1" class="img-fluid">
+                                <p>Space Sofa</p>
+                                <p class="price">From Rs. 100,000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Sofa2.webp" alt="Sofa Set 2" class="img-fluid">
+                                <p>Sero Sofa</p>
+                                <p class="price">From Rs. 130,000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Sofa3.webp" alt="Sofa Set 3" class="img-fluid">
+                                <p>Prodotti Sofa Right</p>
+                                <p class="price">From Rs. 120,000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Sofa4.webp" alt="Sofa Set 4" class="img-fluid">
+                                <p>Noble Sofa</p>
+                                <p class="price">From Rs. 150,000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Sofa5.webp" alt="Sofa Set 5" class="img-fluid">
+                                <p>Grace Sofa</p>
+                                <p class="price">From Rs. 180,000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Sofa6.webp" alt="Sofa Set 6" class="img-fluid">
+                                <p>Cooper Sofa</p>
+                                <p class="price">From Rs. 200,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row g-4">
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Sofa7.webp" alt="Sofa Set 7" class="img-fluid">
+                                <p>Omni Wing Sofa</p>
+                                <p class="price">From Rs. 210,000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Sofa8.webp" alt="Sofa Set 8" class="img-fluid">
+                                <p>Astor Sofa</p>
+                                <p class="price">From Rs. 170,000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Sofa9.webp" alt="Sofa Set 9" class="img-fluid">
+                                <p>Modern Sofa</p>
+                                <p class="price">From Rs. 230,000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Sofa10.webp" alt="Sofa Set 10" class="img-fluid">
+                                <p>Classic Sofa</p>
+                                <p class="price">From Rs. 190,000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Sofa11.webp" alt="Sofa Set 11" class="img-fluid">
+                                <p>Traditional Sofa</p>
+                                <p class="price">From Rs. 140,000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Sofa12.webp" alt="Sofa Set 12" class="img-fluid">
+                                <p>Luxury Sofa</p>
+                                <p class="price">From Rs. 250,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#sofaCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#sofaCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        
+    </div>
+</div>
+</div>
+    <!-- Bedroom Section with Carousel -->
+    <div class="section container my-5">
+        <h2 class="text-center mb-4">Bed Sets Offers</h2>
+        <div id="bedroomCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row g-4">
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Bed1.webp" alt="Bedroom 1" class="img-fluid">
+                                <p>Finnley Queen Size Bed Set</p>
+                                <p class="price">From Rs. 300,000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Bed2.webp" alt="Bedroom 2" class="img-fluid">
+                                <p>Trysil King Size Bed Set</p>
+                                <p class="price">From Rs. 320,000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Bed3.webp" alt="Bedroom 3" class="img-fluid">
+                                <p>Charm King Size Bed Set</p>
+                                <p class="price">From Rs. 350,000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Bed4.webp" alt="Bedroom 4" class="img-fluid">
+                                <p>Cresta Grand King Size Bed Set</p>
+                                <p class="price">From Rs. 310,000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Bed5.webp" alt="Bedroom 5" class="img-fluid">
+                                <p>Chelsea Grand King Size Bed Set</p>
+                                <p class="price">From Rs. 280,000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Bed6.webp" alt="Bedroom 6" class="img-fluid">
+                                <p>Savannah King Size Bed Set</p>
+                                <p class="price">From Rs. 400,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row g-4">
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Bed7.webp" alt="Bedroom 7" class="img-fluid">
+                                <p>Sienna King Size Bed Set</p>
+                                <p class="price">From Rs. 360,000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Bed8.webp" alt="Bedroom 8" class="img-fluid">
+                                <p>Harmony King Size Bed Set</p>
+                                <p class="price">From Rs. 370,000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Bed9.webp" alt="Bedroom 9" class="img-fluid">
+                                <p>Monarch casual Bed Set</p>
+                                <p class="price">From Rs. 390,000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Bed10.webp" alt="Bedroom 10" class="img-fluid">
+                                <p>Contemporary Bed Set</p>
+                                <p class="price">From Rs. 340,000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Bed11.webp" alt="Bedroom 11" class="img-fluid">
+                                <p>Traditional HomeStyle Bed Set</p>
+                                <p class="price">From Rs. 310,000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-2">
+                            <div class="product-item text-center">
+                                <img src="Images/Bed12.webp" alt="Bedroom 12" class="img-fluid">
+                                <p>Grand King Size Bed Set</p>
+                                <p class="price">From Rs. 420,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#bedroomCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bedroomCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+<!-- Dining Table Section with Carousel -->
+<div class="section container my-5">
+    <h2 class="text-center mb-4">Dining Tables Offers</h2>
+    <div id="diningCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row g-4">
+                    <div class="col-md-4 col-lg-2">
+                        <div class="product-item text-center">
+                            <img src="Images/Dining Table1.webp" alt="Dining Table 1" class="img-fluid">
+                            <p>Sienna Dining Set</p>
+                            <p class="price">From Rs. 80,000</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="product-item text-center">
+                            <img src="Images/Dining Table2.webp" alt="Dining Table 2" class="img-fluid">
+                            <p>Deco extendable Dining Set</p>
+                            <p class="price">From Rs. 85,000</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="product-item text-center">
+                            <img src="Images/Dining Table3.webp" alt="Dining Table 3" class="img-fluid">
+                            <p>Roco extendable Dining Set</p>
+                            <p class="price">From Rs. 90,000</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="product-item text-center">
+                            <img src="Images/Dining Table4.webp" alt="Dining Table 4" class="img-fluid">
+                            <p>Elba Dining Set</p>
+                            <p class="price">From Rs. 95,000</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="product-item text-center">
+                            <img src="Images/Dining Table5.webp" alt="Dining Table 5" class="img-fluid">
+                            <p>Traditional Dining Set</p>
+                            <p class="price">From Rs. 88,000</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="product-item text-center">
+                            <img src="Images/Dining Table6.webp" alt="Dining Table 6" class="img-fluid">
+                            <p>Luxury Dining Set</p>
+                            <p class="price">From Rs. 120,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row g-4">
+                    <div class="col-md-4 col-lg-2">
+                        <div class="product-item text-center">
+                            <img src="Images/Dining Table7.webp" alt="Dining Table 7" class="img-fluid">
+                            <p>Monarch Dining Set</p>
+                            <p class="price">From Rs. 105,000</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="product-item text-center">
+                            <img src="Images/Dining Table8.webp" alt="Dining Table 8" class="img-fluid">
+                            <p>Zenith Dining Table</p>
+                            <p class="price">From Rs. 110,000</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="product-item text-center">
+                            <img src="Images/Dining Table9.webp" alt="Dining Table 9" class="img-fluid">
+                            <p>Luxe Dining Set</p>
+                            <p class="price">From Rs. 112,000</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="product-item text-center">
+                            <img src="Images/Dining Table10.webp" alt="Dining Table 10" class="img-fluid">
+                            <p>Orion Dining Set</p>
+                            <p class="price">From Rs. 98,000</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="product-item text-center">
+                            <img src="Images/Dining Table11.webp" alt="Dining Table 11" class="img-fluid">
+                            <p>Aurora Dining Table</p>
+                            <p class="price">From Rs. 115,000</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="product-item text-center">
+                            <img src="Images/Dining Table12.webp" alt="Dining Table 12" class="img-fluid">
+                            <p>Homestead Dining Table</p>
+                            <p class="price">From Rs. 125,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#diningCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#diningCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!-- Sliding Section with Images and Text -->
+<div class="container my-5">
+    <div id="luxuryCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- First Slide -->
+            <div class="carousel-item active">
+                <div class="row align-items-center">
+                    <!-- Image Section -->
+                    <div class="col-md-8">
+                        <img src="Images/Slide1.webp" alt="Astor Sofa Set" class="img-fluid rounded">
+                    </div>
+                    <!-- Text Section -->
+                    <div class="col-md-4">
+                        <h2 class="fw-bold mb-3">Adjustable Comfort & Luxury – Astor Sofa Set</h2>
+                        <p class="text-muted">
+                            Experience unmatched comfort and luxury with our adjustable Astor sofa set. Featuring breathable air leather 
+                            and wide armrests, Astor also features manually adjustable backrests that fold back to create deeper seating, 
+                            perfect for lying back and reading, watching TV, and more.
+                        </p>
+                        <a href="#" class="btn btn-outline-primary mt-3">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Slide -->
+            <div class="carousel-item">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <img src="Images/Slide2.webp" alt="Modern Sofa" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="fw-bold mb-3">Modern Elegance – Contemporary Sofa</h2>
+                        <p class="text-muted">
+                            Add a touch of elegance to your living room with our Contemporary Sofa. Built for style and comfort, it’s the 
+                            perfect addition for modern homes. Available in a variety of colors and materials.
+                        </p>
+                        <a href="#" class="btn btn-outline-primary mt-3">Discover More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Third Slide -->
+            <div class="carousel-item">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <img src="Images/Slide3.webp" alt="Luxury Recliner" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="fw-bold mb-3">Ultimate Relaxation – Luxury Recliner</h2>
+                        <p class="text-muted">
+                            Experience the ultimate relaxation with our Luxury Recliner. Designed for comfort, with multiple reclining 
+                            positions and plush cushioning to help you unwind after a long day.
+                        </p>
+                        <a href="#" class="btn btn-outline-primary mt-3">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pagination Dots -->
+        <div class="d-flex justify-content-center mt-4">
+            <button type="button" data-bs-target="#luxuryCarousel" data-bs-slide-to="0" class="btn-circle active" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#luxuryCarousel" data-bs-slide-to="1" class="btn-circle" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#luxuryCarousel" data-bs-slide-to="2" class="btn-circle" aria-label="Slide 3"></button>
+        </div>
+    </div>
+</div>
+
+
+<div class="discount-banner">
+    <div class="discount-content">
+        <p>ADDITIONAL 2.5% DISCOUNT ON ALL ONLINE ORDERS</p>
+        <a href="#" class="shop-now-btn">SHOP NOW</a>
+    </div>
+</div>
+
+ <!-- Footer -->
+<footer class="bg-light py-5 border-top">
+    <div class="container">
+        <div class="row">
+            <!-- Information Section -->
+            <div class="col-md-3 mb-4">
+                <h6 class="text-uppercase fw-bold mb-3">Information</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-muted">About Us</a></li>
+                    <li><a href="#" class="text-muted">Store Locator</a></li>
+                    <li><a href="#" class="text-muted">Blog</a></li>
+                    <li><a href="#" class="text-muted">Payments</a></li>
+                    <li><a href="#" class="text-muted">Shipping</a></li>
+                    <li><a href="#" class="text-muted">Authorized Dealers</a></li>
+                    <li><a href="#" class="text-muted">Careers</a></li>
+                    <li><a href="#" class="text-muted">Terms of Offers for Sale</a></li>
+                    <li><a href="#" class="text-muted">Terms of Use</a></li>
+                    <li><a href="#" class="text-muted">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- User Area Section -->
+            <div class="col-md-3 mb-4">
+                <h6 class="text-uppercase fw-bold mb-3">User Area</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-muted">Corporate</a></li>
+                    <li><a href="#" class="text-muted">Corporate Form</a></li>
+                    <li><a href="#" class="text-muted">Contact Us</a></li>
+                    <li><a href="#" class="text-muted">Information/Lead Form</a></li>
+                    <li><a href="#" class="text-muted">Rewards</a></li>
+                    <li><a href="#" class="text-muted">Loyalty Form</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info Section -->
+            <div class="col-md-3 mb-4">
+                <h6 class="text-uppercase fw-bold mb-3">Contact Info</h6>
+                <p class="text-muted">021-111-203-203</p>
+                <p><a href="mailto:complaints@interwoodmobel.com" class="text-muted">complaints@interwoodmobel.com</a></p>
+                <h6 class="text-uppercase fw-bold mt-4">Certified by</h6>
+                <div>
+                    <img src="Images/Certification1.webp" alt="Certification 1" class="me-2" style="height: 40px;">
+                    <img src="Images/Certification2.webp" alt="Certification 2" style="height: 40px;">
+                </div>
+            </div>
+
+            <!-- Follow Us & Mailing List -->
+            <div class="col-md-3">
+                <h6 class="text-uppercase fw-bold mb-3">Follow Us</h6>
+                <div class="d-flex mb-3">
+                    <a href="#" class="text-muted me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-muted me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-muted me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-muted me-2"><i class="bi bi-youtube"></i></a>
+                    <a href="#" class="text-muted me-2"><i class="bi bi-tiktok"></i></a>
+                    <a href="#" class="text-muted"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <h6 class="text-uppercase fw-bold">Join Our Mailing List</h6>
+                <p class="text-muted">Subscribe to our newsletter to get the latest news and product updates directly to your email.</p>
+                <form>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter your mail address">
+                        <button class="btn btn-dark" type="submit">→</button>
+                    </div>
+                </form>
+                <h6 class="text-uppercase fw-bold mt-4">Installment Plans & Payment Gateway</h6>
+                <div>
+                    <img src="Images/SilkBank.webp" alt="SilkBank" class="me-2" style="height: 40px;">
+                    <img src="Images/FaysalBank.webp" alt="FaysalBank" class="me-2" style="height: 40px;">
+                    <img src="Images/HBL.webp" alt="HBL Pay" style="height: 40px;">
+                </div>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="row">
+            <!-- Useful Furniture Categories -->
+            <div class="col-md-12 mb-4">
+                <h6 class="text-uppercase fw-bold mb-3">Useful Furniture Categories</h6>
+                <p class="text-muted">
+                    Dressing Tables, Bed Sets, Double Bed Set, Queen Size Beds, Bedsides, Bedroom Chairs, CEO Chairs, Wall Mirrors, Sofas, Sofa Set, 1 Seater Sofa, 2 Seater Sofa, 3 Seater Sofa, L Shaped Sofa, Ottomans, Benches, Recliners, Sofa Cum Bed, Kids Wardrobe, Flooring, Stools, Kids Furniture, Bunk Beds, Single Beds, Vases & Bowls, Accent Tables, Lamps And Lighting, Paintings, Study Chairs, Study Tables, Flowers, Office Chair, Bar Stools, Dining Chairs, Occasional Chairs, Rocking Chairs, Outdoor Furniture, Wall Clock, Bookshelves, Tables, Dining Tables, Dining Table Set, Coffee Tables, Nested Tables, Computer Tables, TV Units
+                </p>
+            </div>
+            <!-- Shop Furniture by Room -->
+            <div class="col-md-12 mb-4">
+                <h6 class="text-uppercase fw-bold mb-3">Shop Furniture by Room</h6>
+                <p class="text-muted">
+                    Living Room Furniture, Bedroom Furniture, Dining Furniture, Study Furniture, Office Furniture, Kids Furniture
+                </p>
+            </div>
+            <!-- Office Furniture Categories -->
+            <div class="col-md-12 mb-4">
+                <h6 class="text-uppercase fw-bold mb-3">Office Furniture Categories</h6>
+                <p class="text-muted">
+                    Office Tables, Manager Tables, Executive Tables, Workstations, Reception Counters, Meeting Tables, Office Chairs, CEO Chairs, High Back Chairs, Ergonomic Chairs, Cafe Chairs, Office Sofas, Office Sofa Set, Office Executive Furniture
+                </p>
+            </div>
+            <!-- Wardrobes & Kitchen Designs -->
+            <div class="col-md-12 mb-4">
+                <h6 class="text-uppercase fw-bold mb-3">Wardrobes & Kitchen Designs</h6>
+                <p class="text-muted">
+                    Kitchen Design, Kitchen Cabinets, Small Kitchen Design, Kitchen Accessories, Kitchen Sink, Kitchen Hood, Wardrobe Design, Built-in wardrobes, Sliding Wardrobes
+                </p>
+            </div>
+            <!-- Delivering In -->
+            <div class="col-md-12">
+                <h6 class="text-uppercase fw-bold mb-3">Delivering In</h6>
+                <p class="text-muted">Lahore, Islamabad, Karachi</p>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p class="text-muted mb-0">&copy; 2024 Interwood, Powered by Alchemative DMCC</p>
+        </div>
+    </div>
+</footer>
+
+
+    <%- contentFor("JS") %>
+    <script src="/css/script.js"></script>

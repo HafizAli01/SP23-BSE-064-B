@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <!-- Bootstrap CSS for Layout and Style -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 0.5rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .checkout-container {
+            padding: 2rem;
+        }
+        .form-control {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Checkout</h1>
+    </header>
+
+    <!-- Main Checkout Form Section -->
+    <div class="container checkout-container">
+        <h2>Enter Order Information</h2>
+        <form action="/checkout" method="POST">
+            <!-- Full Name Field -->
+            <div class="form-group">
+                <label for="customerName">Full Name</label>
+                <input type="text" class="form-control" id="customerName" name="customerName" placeholder="Enter your name" required>
+            </div>
+
+            <!-- Email Address Field -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Phone Number Field -->
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
+            </div>
+
+            <!-- Delivery Address Field -->
+            <div class="form-group">
+                <label for="address">Delivery Address</label>
+                <textarea class="form-control" id="address" name="address" rows="3" placeholder="Provide your delivery address" required></textarea>
+            </div>
+
+            <!-- Payment Method Field -->
+            <div class="form-group">
+                <label for="paymentMethod">Payment Method</label>
+                <select class="form-control" id="paymentMethod" name="paymentMethod" required>
+                    <option value="Cash">Cash on Delivery</option>
+                </select>
+            </div>
+
+            <!-- Submit Order Button -->
+            <button type="submit" class="btn btn-primary btn-block">Place Your Order</button>
+        </form>
+    </div>
+
+
+    <!-- Optional Bootstrap JS for additional functionalities -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

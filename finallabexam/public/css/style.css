@@ -1,0 +1,396 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo Section */
+.logo-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Login Section */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-container a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* Create Account */
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.card-body h2 {
+    font-size: 28px;
+    color: #000;
+}
+
+.btn-dark {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-dark:hover {
+    background-color: #333;
+}
+
+
+/* Discount Banner */
+.discount-banner {
+    text-align: center;
+    background-color: #ffc107;
+    color: #000;
+    padding: 10px 0;
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.discount-banner span {
+    position: absolute;
+    white-space: nowrap;
+    animation: moveText 20s linear infinite;
+}
+
+@keyframes moveText {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+.discount-banner span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.discount-banner span:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.discount-banner span:nth-child(3) {
+    animation-delay: 6s;
+}
+
+.discount-banner span:nth-child(4) {
+    animation-delay: 9s;
+}
+
+.discount-banner span:nth-child(5) {
+    animation-delay: 12s;
+}
+
+.discount-banner span:nth-child(6) {
+    animation-delay: 15s;
+}
+
+
+
+/* Main Banner Image */
+.main-banner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-nav {
+    width: 100%; /* Ensures the navbar items take full width */
+    justify-content: space-around; /* Distributes space evenly */
+}
+
+.navbar-nav .nav-link {
+    margin: 0 10px; /* Adds horizontal spacing between links */
+    font-weight: 500; /* Makes links bold for better readability */
+    color: #000; /* Default text color */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Changes color to blue on hover */
+}
+
+.icon {
+    font-size: 1.2rem;
+    color: #000; /* Default icon color */
+}
+
+.icon:hover {
+    color: #007bff; /* Changes icon color to blue on hover */
+}
+
+
+        /* Section Styles */
+        .section {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .section .row {
+            justify-content: center;
+        }
+
+        /* Product and Category Items */
+        .product-item,
+        .category-item {
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .product-item img,
+        .category-item img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .product-item p,
+        .category-item p {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .price {
+            color: #d9534f;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+
+        /* Hover effect on items */
+        .product-item:hover,
+        .category-item:hover {
+            transform: scale(1.05);
+        }
+
+/* Sliding Section Styling */
+/* Image Styling */
+.img-fluid {
+    height: auto;
+    max-height: 500px; /* Increased height */
+    width: 100%; /* Full width */
+    object-fit: cover; /* Maintains aspect ratio */
+    border-radius: 10px;
+}
+
+/* Typography for Headings and Paragraphs */
+.carousel-item h2 {
+    font-size: 1.8rem;
+    color: #1c1c1c;
+}
+
+.carousel-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Pagination Dots */
+.btn-circle {
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ccc;
+}
+
+.btn-circle.active {
+    background-color: #007bff;
+}
+
+/* Discount Banner Styling */
+.discount-banner {
+    background-color: #FFEB3B; /* Bright yellow background */
+    color: #000; /* Black text color */
+    text-align: center; /* Center align text */
+    padding: 15px 20px; /* Vertical and horizontal padding */
+    font-weight: bold; /* Bold font */
+    font-size: 1.2rem; /* Slightly larger font */
+    text-transform: uppercase; /* Make text uppercase */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between text and button */
+}
+
+/* Button Styling */
+.shop-now-btn {
+    color: #000; /* Black text */
+    font-weight: bold; /* Bold font for the button */
+    font-size: 1rem; /* Medium font size */
+    text-transform: uppercase; /* Uppercase text */
+    padding: 10px 20px; /* Padding around the button */
+    border: 2px solid #000; /* Black border */
+    background-color: transparent; /* Transparent background */
+    text-decoration: none; /* Remove underline */
+    border-radius: 4px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* Button Hover Effect */
+.shop-now-btn:hover {
+    background-color: #000; /* Black background */
+    color: #FFF; /* White text */
+    border-color: #FFF; /* White border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+
+
+        /* Footer Styles */
+        footer {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+            border-top: 1px solid #e9ecef;
+            margin-top: 50px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        footer h6 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #333;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer ul li {
+            margin-bottom: 10px;
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: #777;
+            transition: color 0.3s ease;
+        }
+
+        footer ul li a:hover {
+            color: #005f56;
+        }
+
+        footer p {
+            font-size: 0.85rem;
+            color: #777;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        footer .d-flex a {
+            font-size: 1.2rem;
+            color: #555;
+            transition: color 0.3s ease;
+        }
+
+        footer .d-flex a:hover {
+            color: #005f56;
+        }
+
+        footer form .form-control {
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            font-size: 0.85rem;
+            padding: 10px;
+        }
+
+        footer form .btn {
+            background-color: #005f56;
+            color: white;
+            font-size: 0.9rem;
+            border: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        footer form .btn:hover {
+            background-color: #003f3d;
+        }
+
+        footer img {
+            max-height: 40px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        footer img:hover {
+            transform: scale(1.1);
+        }
+
+        footer .text-center {
+            margin-top: 30px;
+        }
+
+        footer .text-center p {
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            footer {
+                text-align: center;
+            }
+
+            footer .row > div {
+                margin-bottom: 30px;
+            }
+
+            footer img {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+
+
+        
